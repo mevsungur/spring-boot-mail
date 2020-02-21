@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoş Geldiniz</title>
+</head>
+<body>
+
+<h5 th:text="${metin}"></h5>
+<ul>
+    <li th:each="item : ${list}" th:text="${item}"> </li>
+</ul>
+
+</body>
+</html>
